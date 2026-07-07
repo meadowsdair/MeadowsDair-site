@@ -93,6 +93,8 @@
     linear-gradient(oklch(0.68 0.17 245 / 0.06) 1px, transparent 1px),
     linear-gradient(90deg, oklch(0.68 0.17 245 / 0.06) 1px, transparent 1px);
   background-size: 48px 48px;
-#lovable-badge { 
-  display: none !important; 
+}
+
+#lovable-badge {
+  display: none !important;
 }
