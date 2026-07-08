@@ -198,7 +198,14 @@ function PartnerCard({
             : "bg-primary text-primary-foreground hover:opacity-90"
         }`}
       >
-        {partner.available ? "Slot Available" : "View Live Offers"}
+        {partner.available ? (
+  <div className="flex flex-col">
+    <span>Slot Available</span>
+    <span className="text-[9px] opacity-70">
+      {["Prime real estate.", "Don't miss out.", "Your spot here.", "Lancaster's finest are looking."][partner.id % 4]}
+    </span>
+  </div>
+) : "View Live Offers"}
         <ArrowRight className="h-3 w-3" />
       </a>
     </div>
