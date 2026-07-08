@@ -252,8 +252,6 @@ function ValueProps() {
 }
 
 function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-
   return (
     <section id="contact" className="mx-auto max-w-7xl px-6 py-24">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
@@ -265,68 +263,18 @@ function ContactForm() {
             Request a partnership slot
           </h2>
           <p className="mt-3 max-w-md text-muted-foreground">
-            Limited to 40 Lancaster businesses. Tell us about your business
-            and we'll be in touch within 48 hours with availability.
+            Limited to 40 Lancaster businesses. Click the email below to send us your details. We'll reach out within 48 hours.
           </p>
-          <div className="mt-8 space-y-3 font-mono text-sm text-muted-foreground">
-            <div className="flex items-center gap-3">
-              <Mail className="h-4 w-4 text-primary" />
-              MeadowsDair.LLC@Gmail.com
-            </div>
-            <div className="flex items-center gap-3">
-              <Phone className="h-4 w-4 text-primary" />
-              Lancaster, OH
-            </div>
-          </div>
         </div>
-
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setSubmitted(true);
-          }}
-          className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] sm:p-8"
-        >
-          {submitted ? (
-            <div className="grid min-h-[380px] place-items-center text-center">
-              <div>
-                <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-[image:var(--gradient-accent)]">
-                  <ArrowRight className="h-5 w-5 text-primary-foreground" />
-                </div>
-                <h3 className="mt-4 font-display text-xl font-semibold">Request received</h3>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  We'll reach out within 48 hours.
-                </p>
-              </div>
-            </div>
-          ) : (
-            <div className="space-y-4">
-              <Field label="Business name" name="business" required />
-              <Field label="Your name" name="name" required />
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <Field label="Email" name="email" type="email" required />
-                <Field label="Phone" name="phone" type="tel" />
-              </div>
-              <Field label="Business category" name="category" placeholder="e.g. Restaurant, Retail" />
-              <div>
-                <label className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-muted-foreground">
-                  Tell us about your goals
-                </label>
-                <textarea
-                  name="message"
-                  rows={4}
-                  className="w-full rounded-md border border-border bg-input px-3 py-2.5 text-sm text-foreground outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                />
-              </div>
-              <button
-                type="submit"
-                className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-[var(--shadow-glow)] transition hover:opacity-90"
-              >
-                Submit Inquiry <ArrowRight className="h-4 w-4" />
-              </button>
-            </div>
-          )}
-        </form>
+        <div className="flex items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] sm:p-8">
+          <a 
+            href="mailto:MeadowsDair.LLC@gmail.com" 
+            className="inline-flex items-center gap-3 text-lg font-medium text-primary hover:text-primary/80 transition-colors"
+          >
+            <Mail className="h-6 w-6" />
+            MeadowsDair.LLC@gmail.com
+          </a>
+        </div>
       </div>
     </section>
   );
