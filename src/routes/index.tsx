@@ -271,7 +271,7 @@ function ContactForm() {
           <div className="mt-8 space-y-3 font-mono text-sm text-muted-foreground">
             <div className="flex items-center gap-3">
               <Mail className="h-4 w-4 text-primary" />
-              hello@meadowsdair.com
+              MeadowsDair.LLC@Gmail.com
             </div>
             <div className="flex items-center gap-3">
               <Phone className="h-4 w-4 text-primary" />
