@@ -20,7 +20,7 @@ const PARTNERS = Array.from({ length: 40 }, (_, i) => ({
     "Home",
   ][i % 6],
   href: i === 0 ? "https://www.meadowsdair.com" : `https://partner${i + 1}.meadowsdair.com`,
-  available: i >= 12, // first 12 shown as "reserved"
+  available: true, // all slots shown as available
 }));
 
 function Index() {
