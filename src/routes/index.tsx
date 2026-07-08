@@ -263,10 +263,10 @@ function ContactForm() {
             Request a partnership slot
           </h2>
           <p className="mt-3 max-w-md text-muted-foreground">
-            Limited to 40 Lancaster businesses. Click the email below to send us your details. We'll reach out within 48 hours.
+            Limited to 40 Lancaster businesses. Reach out below to send us your details. We'll get back to you within 48 hours.
           </p>
         </div>
-        <div className="flex items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] sm:p-8">
+        <div className="flex flex-col gap-6 items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] sm:p-8">
           <a 
             href="mailto:MeadowsDair.LLC@gmail.com?subject=Partnership%20Inquiry" 
             className="inline-flex items-center gap-3 text-lg font-medium text-primary hover:text-primary/80 transition-colors"
@@ -274,41 +274,19 @@ function ContactForm() {
             <Mail className="h-6 w-6" />
             MeadowsDair.LLC@gmail.com
           </a>
+          
+          <a 
+            href="tel:7402776442" 
+            className="inline-flex items-center gap-3 text-lg font-medium text-primary hover:text-primary/80 transition-colors"
+          >
+            <Phone className="h-6 w-6" />
+            (740) 277-6442
+          </a>
         </div>
       </div>
     </section>
   );
 }
-function Field({
-  label,
-  name,
-  type = "text",
-  required,
-  placeholder,
-}: {
-  label: string;
-  name: string;
-  type?: string;
-  required?: boolean;
-  placeholder?: string;
-}) {
-  return (
-    <div>
-      <label className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-muted-foreground">
-        {label}
-        {required && <span className="ml-1 text-primary">*</span>}
-      </label>
-      <input
-        name={name}
-        type={type}
-        required={required}
-        placeholder={placeholder}
-        className="w-full rounded-md border border-border bg-input px-3 py-2.5 text-sm text-foreground outline-none transition placeholder:text-muted-foreground/50 focus:border-primary focus:ring-2 focus:ring-primary/20"
-      />
-    </div>
-  );
-}
-
 function Footer() {
   return (
     <footer className="border-t border-border/60 bg-surface/40">
