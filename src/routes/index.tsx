@@ -268,7 +268,7 @@ function ContactForm() {
         </div>
         <div className="flex items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] sm:p-8">
           <a 
-            href="mailto:MeadowsDair.LLC@gmail.com" 
+            href="mailto:MeadowsDair.LLC@gmail.com?subject=Partnership%20Inquiry" 
             className="inline-flex items-center gap-3 text-lg font-medium text-primary hover:text-primary/80 transition-colors"
           >
             <Mail className="h-6 w-6" />
@@ -279,7 +279,6 @@ function ContactForm() {
     </section>
   );
 }
-
 function Field({
   label,
   name,
