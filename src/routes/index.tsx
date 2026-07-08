@@ -257,13 +257,13 @@ function ContactForm() {
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div>
           <div className="font-mono text-xs uppercase tracking-wider text-primary">
-            Partnership Inquiry
+            Contact Information
           </div>
           <h2 className="mt-2 font-display text-3xl font-bold tracking-tight sm:text-4xl">
             Request a partnership slot
           </h2>
           <p className="mt-3 max-w-md text-muted-foreground">
-            Limited to 40 Lancaster businesses. Reach out below to send us your details. We'll get back to you within 48 hours.
+            Limited to 40 Lancaster businesses. Reach out via email or phone to send us your details. We'll get back to you within 48 hours.
           </p>
         </div>
         <div className="flex flex-col gap-6 items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] sm:p-8">
