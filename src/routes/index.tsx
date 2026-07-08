@@ -30,14 +30,9 @@ function Nav() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#top" className="flex items-center gap-2">
-          <div className="grid h-9 w-9 place-items-center rounded-md bg-[image:var(--gradient-accent)] shadow-[var(--shadow-glow)]">
-            <Truck className="h-5 w-5 text-primary-foreground" />
-          </div>
-          <div className="font-display text-sm font-semibold tracking-tight">
-            MeadowsDair
-            <span className="ml-1 text-muted-foreground">LLC</span>
-          </div>
-        </a>
+          <a href="https://meadowsdair.com" className="font-display text-sm font-semibold tracking-tight">
+  MeadowsDair <span className="ml-1 text-muted-foreground">LLC</span>
+</a>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#directory" className="transition hover:text-foreground">Directory</a>
           <a href="#why" className="transition hover:text-foreground">Why Us</a>
@@ -372,9 +367,6 @@ function Footer() {
     <footer className="border-t border-border/60 bg-surface/40">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 px-6 py-8 sm:flex-row sm:items-center">
         <div className="flex items-center gap-2">
-          <div className="grid h-7 w-7 place-items-center rounded-md bg-[image:var(--gradient-accent)]">
-            <Truck className="h-4 w-4 text-primary-foreground" />
-          </div>
           <span className="font-display text-sm font-semibold">MeadowsDair LLC</span>
         </div>
         <p className="font-mono text-xs text-muted-foreground">
