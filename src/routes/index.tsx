@@ -9,18 +9,7 @@ export const Route = createFileRoute("/")({
 // Swap these href values with real partner subdomains
 // e.g. https://partner1.meadowsdair.com
 const PARTNERS = Array.from({ length: 40 }, (_, i) => ({
-  id: i + 1,
-  name: `Partner Slot ${String(i + 1).padStart(2, "0")}`,
-  category: [
-    "Restaurant",
-    "Retail",
-    "Services",
-    "Wellness",
-    "Auto",
-    "Home",
-  ][i % 6],
-  href: i === 0 ? "https://www.meadowsdair.com" : `https://partner${i + 1}.meadowsdair.com`,
-  available: true, // all slots shown as available
+  { id: 1, name: "MeadowsDair LLC", category: "Services", href: "meadowsdair.com", available: false },
 }));
 
 function Index() {
